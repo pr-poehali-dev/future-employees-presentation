@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import { vacanciesData } from "@/data/vacancies";
@@ -5,6 +6,10 @@ import { vacanciesData } from "@/data/vacancies";
 export default function Vacancy() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const vacancy = vacanciesData.find((v) => v.id === id);
 
