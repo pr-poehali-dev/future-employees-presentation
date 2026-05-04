@@ -324,7 +324,7 @@ export default function Index() {
                 <Icon name="Phone" size={22} />
                 +7 928 957 22 54
               </a>
-              <p className="text-white/50 text-sm mt-4">Денис (HR) · Пн–Пт 9:00–18:00 · Сб 10:00–14:00</p>
+              <p className="text-white/50 text-sm mt-4">Евгений (HR) · Пн–Пт 9:00–18:00 · Сб 10:00–14:00</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

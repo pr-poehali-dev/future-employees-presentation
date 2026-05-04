@@ -194,7 +194,7 @@ export default function Vacancy() {
                 <Icon name="Phone" size={18} />
                 +7 928 957 22 54
               </a>
-              <p className="text-white/60 text-xs text-center mt-3">Денис (HR) · Пн–Пт 9:00–18:00</p>
+              <p className="text-white/60 text-xs text-center mt-3">Евгений (HR) · Пн–Пт 9:00–18:00</p>
             </div>
 
             {/* Conditions */}
