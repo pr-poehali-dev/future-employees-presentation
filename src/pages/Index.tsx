@@ -93,7 +93,7 @@ export default function Index() {
             <h1 className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-none tracking-tight mb-4">
               РАБОТАЙ НА
               <br />
-              <span className="text-vpk-red">
+              <span className="text-green-500">
                 ПРОИЗВОДСТВЕ
               </span>
             </h1>
