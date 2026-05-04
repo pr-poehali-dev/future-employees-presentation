@@ -68,15 +68,19 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				vpk: {
-					dark: '#0a0d14',
-					darker: '#060810',
-					blue: '#00b4d8',
-					'blue-bright': '#48cae4',
-					'blue-glow': 'rgba(0,180,216,0.15)',
-					steel: '#1e2a3a',
-					'steel-light': '#2d3f55',
-					silver: '#8899aa',
-					light: '#e0eaf5',
+					dark: '#1a2744',
+					darker: '#111d36',
+					blue: '#1a3a8f',
+					'blue-bright': '#2a54c8',
+					'blue-glow': 'rgba(26,58,143,0.15)',
+					red: '#c8102e',
+					'red-bright': '#e63350',
+					steel: '#e8edf5',
+					'steel-light': '#f0f4fb',
+					silver: '#5a6a80',
+					light: '#ffffff',
+					bg: '#f5f7fb',
+					'bg-alt': '#edf0f7',
 				}
 			},
 			borderRadius: {
