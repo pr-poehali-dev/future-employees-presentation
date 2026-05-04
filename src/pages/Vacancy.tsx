@@ -121,6 +121,46 @@ export default function Vacancy() {
               </ul>
             </div>
 
+            {/* Important */}
+            {vacancy.important && vacancy.important.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-sm border border-vpk-steel p-8">
+                <h2 className="font-oswald text-2xl font-bold text-vpk-dark uppercase mb-5 flex items-center gap-2">
+                  <Icon name="Star" size={22} className="text-vpk-blue" />
+                  Для нас важно
+                </h2>
+                <ul className="space-y-3">
+                  {vacancy.important.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-vpk-blue/10 border border-vpk-blue/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Icon name="Star" size={11} className="text-vpk-blue" />
+                      </div>
+                      <span className="text-vpk-dark leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Conditions */}
+            {vacancy.conditions && vacancy.conditions.length > 0 && (
+              <div className="bg-green-50 rounded-2xl shadow-sm border border-green-200 p-8">
+                <h2 className="font-oswald text-2xl font-bold text-vpk-dark uppercase mb-5 flex items-center gap-2">
+                  <Icon name="Gift" size={22} className="text-green-600" />
+                  Условия
+                </h2>
+                <ul className="space-y-3">
+                  {vacancy.conditions.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Icon name="Check" size={12} className="text-white" />
+                      </div>
+                      <span className="text-vpk-dark leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Photos */}
             {vacancy.photos && vacancy.photos.length > 0 && (
               <div className="bg-white rounded-2xl shadow-sm border border-vpk-steel p-8">
