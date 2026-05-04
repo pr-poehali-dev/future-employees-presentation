@@ -129,14 +129,12 @@ export default function Index() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-vpk-darker/90 backdrop-blur-md border-b border-vpk-steel/30">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded bg-vpk-blue flex items-center justify-center">
-              <span className="text-vpk-dark font-oswald font-bold text-sm">ВПК</span>
-            </div>
-            <div>
-              <p className="font-oswald text-sm font-semibold text-white leading-none">Вяземская</p>
-              <p className="text-vpk-silver text-xs">производственная компания</p>
-            </div>
+          <div className="flex items-center">
+            <img
+              src="https://cdn.poehali.dev/projects/ca683cdc-ffeb-4254-9c86-275af8c0559d/bucket/90d03c70-caa9-4e3c-84ef-c2a257541ee2.png"
+              alt="ВПК — Вяземская производственная компания"
+              className="h-12 w-auto object-contain"
+            />
           </div>
           <a href="tel:+79289572254" className="flex items-center gap-2 text-vpk-blue hover:text-vpk-blue-bright transition-colors duration-300">
             <Icon name="Phone" size={14} />
