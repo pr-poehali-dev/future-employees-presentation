@@ -70,7 +70,7 @@ export const vacanciesData: VacancyData[] = [
     id: "master-smeny",
     title: "Мастер смены",
     subtitle: "Руководство производственной сменой",
-    salary: "от 56 000",
+    salary: "от 75 000",
     experience: "С опытом",
     icon: "Settings",
     hot: false,
