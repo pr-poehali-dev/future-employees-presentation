@@ -192,9 +192,21 @@ export default function Index() {
                 <h3 className="font-oswald text-xl font-semibold text-vpk-dark mb-1 uppercase">{v.title}</h3>
                 <p className="text-vpk-silver text-sm mb-4 leading-relaxed line-clamp-2">{v.shortDesc}</p>
 
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1 text-xs bg-green-50 text-green-700 border border-green-200 rounded-full px-2.5 py-1">
+                    <Icon name="Users" size={11} /> Опыт не обязателен
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs bg-blue-50 text-vpk-blue border border-blue-200 rounded-full px-2.5 py-1">
+                    <Icon name="GraduationCap" size={11} /> Обучим бесплатно
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs bg-amber-50 text-amber-700 border border-amber-200 rounded-full px-2.5 py-1">
+                    <Icon name="TrendingUp" size={11} /> + премии за объём
+                  </span>
+                </div>
+
                 <div className="flex items-center justify-between pt-4 border-t border-vpk-steel">
                   <div>
-                    <p className="text-xs text-vpk-silver mb-0.5">Заработная плата</p>
+                    <p className="text-xs text-vpk-silver mb-0.5">Оклад</p>
                     <p className="font-oswald text-2xl font-bold text-vpk-blue">{v.salary} <span className="text-lg">₽</span></p>
                   </div>
                   <span className="flex items-center gap-1 text-vpk-blue font-oswald font-semibold text-sm uppercase tracking-wide group-hover:gap-2 transition-all duration-300">
