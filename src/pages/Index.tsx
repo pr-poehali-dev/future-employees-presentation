@@ -87,7 +87,7 @@ export default function Index() {
           <div className={`transition-all duration-1000 ${heroSection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/30 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm">
               <div className="w-2 h-2 rounded-full bg-vpk-red animate-pulse" />
-              <span className="text-white text-sm font-roboto font-medium">Открытый набор сотрудников · 2025</span>
+              <span className="text-white text-sm font-roboto font-medium">Открытые вакансии</span>
             </div>
 
             <h1 className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-none tracking-tight mb-4">
