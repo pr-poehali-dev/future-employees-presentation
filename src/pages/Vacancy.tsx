@@ -191,13 +191,13 @@ export default function Vacancy() {
             {/* CTA */}
             <div className="bg-vpk-blue rounded-2xl p-6 text-white sticky top-24">
               <h3 className="font-oswald text-xl font-bold uppercase mb-2">Заинтересовала вакансия?</h3>
-              <p className="text-white/80 text-sm mb-5 leading-relaxed">Звоните Денису — рассмотрим вашу кандидатуру в течение дня.</p>
+              <p className="text-white/80 text-sm mb-5 leading-relaxed">Звоните Евгению — рассмотрим вашу кандидатуру в течение дня.</p>
               <a
-                href="tel:+79289572254"
+                href="tel:+79107600321"
                 className="w-full flex items-center justify-center gap-2 bg-white text-vpk-blue font-oswald font-bold text-base py-3 rounded-xl uppercase tracking-wide hover:bg-vpk-bg transition-all duration-300 shadow-sm"
               >
                 <Icon name="Phone" size={18} />
-                +7 928 957 22 54
+                +7 910 760 03 21
               </a>
               <p className="text-white/60 text-xs text-center mt-3">Евгений (HR) · Пн–Пт 9:00–18:00</p>
             </div>

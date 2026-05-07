@@ -67,9 +67,9 @@ export default function Index() {
               className="h-12 w-auto object-contain"
             />
           </div>
-          <a href="tel:+79289572254" className="flex items-center gap-2 text-vpk-blue hover:text-vpk-blue-bright transition-colors duration-300 font-medium">
+          <a href="tel:+79107600321" className="flex items-center gap-2 text-vpk-blue hover:text-vpk-blue-bright transition-colors duration-300 font-medium">
             <Icon name="Phone" size={16} />
-            <span className="font-roboto text-sm font-semibold hidden sm:inline">+7 928 957 22 54</span>
+            <span className="font-roboto text-sm font-semibold hidden sm:inline">+7 910 760 03 21</span>
           </a>
         </div>
       </nav>
@@ -115,7 +115,7 @@ export default function Index() {
                 Смотреть вакансии
               </a>
               <a
-                href="tel:+79289572254"
+                href="tel:+79107600321"
                 className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-oswald font-semibold px-8 py-4 rounded-lg text-lg uppercase tracking-wide hover:bg-white hover:text-vpk-dark transition-all duration-300"
               >
                 <Icon name="Phone" size={20} />
@@ -330,11 +330,11 @@ export default function Index() {
                 Рассмотрим вашу кандидатуру в течение дня и пригласим на собеседование. Никаких долгих ожиданий.
               </p>
               <a
-                href="tel:+79289572254"
+                href="tel:+79107600321"
                 className="inline-flex items-center justify-center gap-3 bg-white text-vpk-blue font-oswald font-bold text-xl py-4 px-10 rounded-xl uppercase tracking-wide hover:bg-vpk-bg transition-all duration-300 hover:scale-105 shadow-sm"
               >
                 <Icon name="Phone" size={22} />
-                +7 928 957 22 54
+                +7 910 760 03 21
               </a>
               <p className="text-white/50 text-sm mt-4">Евгений (HR) · Пн–Пт 9:00–18:00 · Сб 10:00–14:00</p>
             </div>
