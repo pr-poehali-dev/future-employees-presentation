@@ -255,25 +255,6 @@ export default function Index() {
             <div className="w-20 h-1 bg-vpk-blue mx-auto mt-4 rounded-full" />
           </div>
 
-          <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-700 ${gallerySection.inView ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
-            <div className="relative rounded-2xl overflow-hidden aspect-video group shadow-md">
-              <img src={CANNING_IMG} alt="Линия розлива банок" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-vpk-darker/80 to-transparent" />
-              <div className="absolute bottom-4 left-4">
-                <p className="font-oswald text-white text-xl font-semibold uppercase">Линия розлива банок</p>
-                <p className="text-white/70 text-sm">Европейское оборудование</p>
-              </div>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden aspect-video group shadow-md">
-              <img src={PACKING_IMG} alt="Цех упаковки" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-vpk-darker/80 to-transparent" />
-              <div className="absolute bottom-4 left-4">
-                <p className="font-oswald text-white text-xl font-semibold uppercase">Цех упаковки</p>
-                <p className="text-white/70 text-sm">Чистота и автоматизация</p>
-              </div>
-            </div>
-          </div>
-
           <div className={`mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 transition-all duration-700 delay-200 ${gallerySection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {[
               { icon: "Clock", text: "График 4/4", sub: "по 12 часов" },
