@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import { vacanciesData } from "@/data/vacancies";
+import type { JobInstructionHighlight } from "@/data/vacancies";
 
 export default function Vacancy() {
   const { id } = useParams<{ id: string }>();
@@ -163,6 +164,34 @@ export default function Vacancy() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            )}
+
+            {/* Job Instruction Highlights */}
+            {vacancy.jobInstructionHighlights && vacancy.jobInstructionHighlights.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-sm border border-vpk-steel p-8">
+                <div className="flex items-start gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-vpk-blue/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="BookOpen" size={20} className="text-vpk-blue" />
+                  </div>
+                  <div>
+                    <h2 className="font-oswald text-2xl font-bold text-vpk-dark uppercase">Должностная инструкция</h2>
+                    <p className="text-vpk-silver text-sm mt-1">Ключевые обязанности согласно официальному документу</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {vacancy.jobInstructionHighlights.map((item: JobInstructionHighlight, i: number) => (
+                    <div key={i} className="bg-vpk-bg rounded-xl border border-vpk-steel p-5 hover:border-vpk-blue/40 transition-colors duration-300">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-9 h-9 rounded-lg bg-vpk-blue flex items-center justify-center flex-shrink-0">
+                          <Icon name={item.icon as "FlaskConical"} size={16} className="text-white" />
+                        </div>
+                        <p className="font-oswald font-bold text-vpk-dark uppercase text-sm">{item.title}</p>
+                      </div>
+                      <p className="text-vpk-silver text-sm leading-relaxed">{item.text}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
